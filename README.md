@@ -2,7 +2,7 @@
 # GameCritic Hub
 
 **Creating an Account**
-A new user visits the website and decides to create an account. After registering and logging in, they can browse games, write reviews, and add games to their personal watchlist.
+A new user visits the website and decides to create an account. After registering and logging in, they can browse games, write reviews, and add games to their watchlist.
 
 **Reviewing a Game**
 
