@@ -5,6 +5,7 @@
 GameCritic Hub is a web application where users can discover video games, write reviews, rate games, and maintain a personal watchlist of games they want to play. The platform is designed to help gamers share their opinions and find useful information about different games before trying them.
 
 **Creating an Account**
+
 A new user visits the website and decides to create an account. After registering and logging in, they can browse games, write reviews, and add games to their watchlist.
 
 **Reviewing a Game**
