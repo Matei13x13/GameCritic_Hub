@@ -12,11 +12,6 @@ public class MainController {
     @Autowired
     private GameService gameService;
 
-    @GetMapping("/")
-    public String home() {
-        return "login";
-    }
-
     @GetMapping("/login")
     public String login() {
         return "login";
@@ -31,5 +26,16 @@ public class MainController {
     public String games(Model model) {
         model.addAttribute("games", gameService.getAllGames());
         return "games";
+
+    }
+
+    @GetMapping("/home")
+    public String homePage() {
+        return "home";
+    }
+
+    @GetMapping("/")
+    public String home() {
+        return "login";
     }
 }

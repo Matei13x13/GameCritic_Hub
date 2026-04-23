@@ -2,16 +2,37 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Games</title>
+    <link rel="stylesheet" th:href="@{/styles.css}">
 </head>
 <body>
 
-<h1>Game List</h1>
+<div class="navbar">
+    <div class="logo">GameCritic Hub</div>
+    <div>
+        <a th:href="@{/home}">Home</a>
+    </div>
+</div>
 
-<div th:each="game : ${games}">
-    <h2 th:text="${game.title}"></h2>
-    <p th:text="${game.genre}"></p>
-    <p>Rating: <span th:text="${game.rating}"></span></p>
-    <hr>
+<div class="container">
+    <h1>Browse Games</h1>
+
+    <div class="games-container">
+        <div class="game-card" th:each="game : ${games}">
+
+            <div class="game-image"></div>
+
+            <div class="game-content">
+                <div class="game-title" th:text="${game.title}"></div>
+                <div class="game-genre" th:text="${game.genre}"></div>
+                <div class="game-rating">
+                    Rating: <span th:text="${game.rating}"></span>
+                </div>
+
+                <a class="btn" href="#">View Details</a>
+            </div>
+
+        </div>
+    </div>
 </div>
 
 </body>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" th:href="@{/styles.css}">
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <div class="logo">GameCritic Hub</div>
+    <div>
+        <a th:href="@{/games}">Games</a>
+        <a th:href="@{/login}">Logout</a>
+    </div>
+</div>
+
+<!-- Hero Section -->
+<div class="hero">
+    <div class="hero-content">
+        <h1>Make every game choice count</h1>
+        <p>Discover, review, and track your favorite games all in one place.</p>
+        <a class="btn" th:href="@{/games}">Browse Games</a>
+    </div>
+</div>
+
+<!-- Features Section -->
+<div class="features">
+    <div class="feature-card">
+        <h3>Browse Games</h3>
+        <p>Explore a wide collection of games with detailed information.</p>
+    </div>
+
+    <div class="feature-card">
+        <h3>Write Reviews</h3>
+        <p>Share your experience and help other players make decisions.</p>
+    </div>
+
+    <div class="feature-card">
+        <h3>Create Watchlist</h3>
+        <p>Save games and keep track of what you want to play next.</p>
+    </div>
+</div>
+
+</body>
+</html>

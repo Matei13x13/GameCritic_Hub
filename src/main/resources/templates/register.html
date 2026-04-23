@@ -1,11 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <h1>Register Page</h1>
+    <title>Register</title>
+    <link rel="stylesheet" th:href="@{/styles.css}">
 </head>
 <body>
+<form th:action="@{/home}">
+<div class="center-container">
+    <div class="card">
+        <h2>Create Account</h2>
+
+        <form>
+            <div class="input-group">
+                <input type="text" placeholder="Username">
+            </div>
+
+            <div class="input-group">
+                <input type="email" placeholder="Email">
+            </div>
+
+            <div class="input-group">
+                <input type="password" placeholder="Password">
+            </div>
+
+            <button class="btn">Sign Up</button>
+        </form>
+
+        <p>
+            Already have an account?
+            <a th:href="@{/login}">Log in</a>
+        </p>
+    </div>
+</div>
 
 </body>
 </html>

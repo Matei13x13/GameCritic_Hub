@@ -1,18 +1,34 @@
 <!DOCTYPE html>
-<link rel="stylesheet" th:href="@{/styles.css}">
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Login</title>
+    <link rel="stylesheet" th:href="@{/styles.css}">
 </head>
 <body>
-<h1>GameCritic Hub</h1>
+<form th:action="@{/home}">
+<div class="center-container">
+    <div class="card">
+        <h2>GameCritic Hub</h2>
+        <h3>Welcome back</h3>
 
-<form th:action="@{/login}" method="post">
-    <input type="email" name="email" placeholder="Email">
-    <input type="password" name="password" placeholder="Password">
-    <button type="submit">Login</button>
-</form>
+        <form>
+            <div class="input-group">
+                <input type="email" placeholder="Email">
+            </div>
 
-<a th:href="@{/register}">Sign up</a>
+            <div class="input-group">
+                <input type="password" placeholder="Password">
+            </div>
+
+            <button class="btn">Log In</button>
+        </form>
+
+        <p>
+            Don’t have an account?
+            <a th:href="@{/register}">Sign up</a>
+        </p>
+    </div>
+</div>
+
 </body>
 </html>
